@@ -1,0 +1,7 @@
+
+usage: auto_vows INTERVAL(sec) testfile
+
+examples
+In following example, "vows foo-test.js and vows bar-test.js" should be executed every five seconds.
+$ ruby auto_vows 5 foo-test.js bar-test.js
+
