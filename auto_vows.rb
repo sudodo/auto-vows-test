@@ -15,7 +15,7 @@ while true
 	system("echo \"#{Time.now} run auto-vows-test\" >> auto-vows.log")
 	filenames.each do |filename|
 		system("echo \"#{filename}\" >> auto-vows.log")
-		system("./vows #{filename} >> auto-vows.log")
+		system("./vows #{filename} --spec >> auto-vows.log")
 	end
 
 	sleep interval
